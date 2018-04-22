@@ -4,11 +4,11 @@
 // BlognPlus Module
 // http://www.blogn.org/
 //--------------------------------------------------------------------
-// *** QR CODE Generate Module ***
+// *** System Uptime Module ***
 //
-// uninstall.php
+// install.php
 //
-// Last Update: 2012/03/07
+// Last Update: 2012/03/03
 // Version    : 1.0
 // Copyright  : Yuta Akama
 // URL        : https://www.bloodia.net/
@@ -16,8 +16,8 @@
 
 $mod = array(
 	"ver"	=>	"1.0",
-	"id"	=>	"qrcode",
-	"name"	=>	"QRコード生成モジュール"
+	"id"	=>	"sysuptime",
+	"name"	=>	"システム稼働時間表示モジュール"
 );
 
 if (isset($objBlognPlus)) {
@@ -48,11 +48,17 @@ if (isset($objBlognPlus)) {
 
 $information = '
 <div style="margin: 0 2em;">
-<h2 style="color:#0000ff; font-size: 120%;">'.$mod["name"].' ver '.$mod["ver"].'</h2>
-<div style="border-left: 2px solid #cccccc; margin-left: 2em; padding: 0 2em;">
-<p><span style="color: #008000">■</span> モジュールはアンインストールされました。</p>
-<p><span style="color: #ff0000">■</span> モジュール構成ファイルは削除されていませんので、もう不要であれば FTP で /'.$mod["id"].'/ ディレクトリごと削除してください。</p>
-</div>
-</div>';
+<h2 style="color: #0000ff; font-size: 120%;">'.$mod["name"].' ver '.$mod["ver"].'</h2>
+<div style="border-left: 2px solid #aaaaff; margin-left: 2em; padding: 0 2em;">
+<p><span style="color:#008000">■</span> モジュールのインストールが完了しました。</p>';
+
+// ファイルに書き込めるかチェック
+$filename = BLOGN_MODDIR.$mod["id"].'/ini.cgi';
+if (!is_writable($filename)) {
+	$information .= '<p><span style="color: #ff0000">■</span> /'.$mod["id"].'/ini.cgi のパーミッションに書き込み属性を与えてください（「666」「
+606」等）。</p>';
+} else {
+	$information .= '<p><span style="color: #008000">■</span> /'.$mod["id"].'/ini.cgi のパーミッション OK</p>';
+}
 
 ?>

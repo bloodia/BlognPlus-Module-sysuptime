@@ -1,0 +1,47 @@
+{BLOGN_INFORMATION}
+
+<div class="blogn_main">
+  <h1 style="font-size: 150%; text-align: center;">システム稼働時間表示モジュール</h1>
+  <form action="./admin.php?mode=module&amp;action=set" name="post" method="post">
+    <input type="hidden" name="blogn_module_name" value="sysuptime" />
+    <div class="blogn_bar">設定</div>
+    <table class="blogn_user_list">
+    <tr>
+      <th bgcolor="#dcdcdc" width="20%" align="center" rowspan="3">
+        設定
+      </th>
+      <td>
+        <input type="radio" name="blogn_sysuptime_type" value="0"{BLOGN_SYSUPTIME_TYPE0} />
+        日数と時間と分（表示例：&nbsp;<i>DD</i>&nbsp;日間と&nbsp;<i>HH</i>&nbsp;時間&nbsp;<i>MM</i>&nbsp;分）
+      </td>
+    </tr>
+    <tr>
+      <td width="80%">
+        <input type="radio" name="blogn_sysuptime_type" value="1"{BLOGN_SYSUPTIME_TYPE1} />
+        時間と分（表示例：&nbsp;<i>HH</i>&nbsp;時間&nbsp;<i>MM</i>&nbsp;分）
+      </td>
+    </tr>
+    <tr>
+      <td width="80%">
+        <input type="radio" name="blogn_sysuptime_type" value="2"{BLOGN_SYSUPTIME_TYPE2} />
+	分（表示例：&nbsp;<i>MM</i>&nbsp;分）
+      </td>
+    </tr>
+    </table>
+    <div align="right"><input type="submit" value="設定する"></div>
+  </form>
+  <div class="blogn_bar">独自タグ</div>
+  <table class="blogn_user_list">
+  <tr>
+    <th bgcolor="#dcdcdc" width="20%" align="center" rowspan="3">
+      独自タグ
+    </th>
+    <td width="80%">
+      表示したい場所に以下の独自タグを記述してください。
+      <br>
+      <strong>{SYSUPTIME}</strong>
+    </td>
+  </tr>
+  </table>
+</div>
+<hr />

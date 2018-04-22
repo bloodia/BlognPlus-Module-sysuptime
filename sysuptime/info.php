@@ -4,11 +4,11 @@
 // BlognPlus Module
 // http://www.blogn.org/
 //--------------------------------------------------------------------
-// *** QR CODE Generate Module ***
+// *** System Uptime Module ***
 //
 // info.php
 //
-// Last Update: 2012/03/07
+// Last Update: 2012/03/03
 // Version    : 1.0
 // Copyright  : Yuta Akama
 // URL        : https://www.bloodia.net/
@@ -18,10 +18,10 @@
 $blogn_mod_version = "1.0";
 
 /* モジュールの名前を記入してください */
-$blogn_mod_name = 'QRコード生成';
+$blogn_mod_name = 'システム稼働時間表示';
 
 /* モジュールの説明を記入してください */
-$blogn_mod_desc = 'ブログ内にGoogle Chart APIを利用してQRコードを生成します。';
+$blogn_mod_desc = 'ブログ内にシステムの稼働時間を表示します。';
 
 /* モジュールのインストール／アップデート用スクリプト名を記入してください */
 $blogn_mod_install = 'install.php';
@@ -33,7 +33,7 @@ $blogn_mod_control = 'control.php';
 
 /* モジュールの表示処理用スクリプト名を記入してください */
 /* アクセス解析など、表示用スクリプトが不要な場合は ''と記入してください */
-$blogn_mod_viewer = 'qrcode.php';
+$blogn_mod_viewer = 'sysuptime.php';
 
 /* Blogn+v260以降用 */
 /* index.phpで事前に読み込むfunctionデータがあればスクリプト名を記入してください */
