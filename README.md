@@ -4,7 +4,7 @@
 著作権表示部の削除、および二次配布以外は、特に制限等は設けません。ご自由にご使用ください。
 
 ## サンプル
-![サンプル](https://www.bloodia.net/files/download/blognplus/module/module1.jpg)
+![サンプル](https://www.bloodia.net/files/download/blognplus-module-sysuptime.jpg)
 
 ## 動作環境
 Windows環境上の以下のブラウザで正常表示を確認しています。
