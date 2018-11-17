@@ -1,4 +1,7 @@
 # BlognPlus-Module-sysuptime
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/bloodia/BlognPlus-Module-sysuptime/blob/master/LICENSE)
+
+## 概要
 [BlognPlus（ぶろぐん＋）](http://www.blogn.org "BlognPlus（ぶろぐん＋）")用のシステム稼働時間をスキン上に表示するモジュールです。  
 プリインストールされていたカレンダーモジュールを参考に作成しました。  
 著作権表示部の削除、および二次配布以外は、特に制限等は設けません。ご自由にご使用ください。
